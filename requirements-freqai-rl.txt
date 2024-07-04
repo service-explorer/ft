@@ -2,10 +2,15 @@
 -r requirements-freqai.txt
 
 # Required for freqai-rl
-torch==2.1.2
+torch==2.2.0
 #until these branches will be released we can use this
 gymnasium==0.29.1
 stable_baselines3==2.2.1
 sb3_contrib>=2.0.0a9
 # Progress bar for stable-baselines3 and sb3-contrib
-tqdm==4.66.1
+tqdm==4.66.3
+fonttools>=4.43.0 # not directly required, pinned by Snyk to avoid a vulnerability
+numpy>=1.22.2 # not directly required, pinned by Snyk to avoid a vulnerability
+pillow>=10.3.0 # not directly required, pinned by Snyk to avoid a vulnerability
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
+wheel>=0.38.0 # not directly required, pinned by Snyk to avoid a vulnerability
